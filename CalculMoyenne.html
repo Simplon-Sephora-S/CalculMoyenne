@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calcul moyenne</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+  //Exercice calcul moyenne
+   //Un programme demande de saisir 10 notes
+//( une par une et de 0 à 20 ) et
+//affiche la moyenne à la fin
+//noprotect
+
+var tableauNotes = [];
+var sommeNotes = Number(0);
+var moyenneNotes;
+
+for( var i =0 ; i<2 ; i++) {
+
+  var reponseUser = prompt("saisissez note");
+reponseUser = Number(reponseUser);
+  // dans le tableau notes met cette donnée
+  tableauNotes.push(reponseUser);
+console.log(reponseUser);
+console.log(tableauNotes)
+}
+
+//calcule la somme -- COMMENT FAIRE LA SOMME PROPREMENT ???
+// Boucle qui prend les index et les aditionne
+// TANT QUE il y a deux? reponses user continu d'additionner les index
+//sommeNotes = tableauNotes[0] + tableauNotes[1];
+for(var a=0;a<tableauNotes.length;a++) {
+sommeNotes += tableauNotes[a];
+};
+
+console.log("somme : " + sommeNotes);
+
+//Calcule la moyenne
+moyenneNotes = sommeNotes /tableauNotes.length;
+console.log("moyenne notes: " + moyenneNotes);
+</script>
+</body>
+
+</html>

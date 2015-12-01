@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Moyenne</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+// stock les notes dans un tableau
+  var notes=[];
+  //declare la variable somme
+  var somme=0;
+  // declare la variable moyenne
+  var moyenne;
+
+  //Boucle l'action : jusqu'a que le nombre de notes a atteint son maximum
+  while (notes.length <10) {
+    //pose la question
+  var reponseUser=prompt("entrer vos notes de 0 à 20 ?");
+// si la note est entre 0 et 20
+    if ((Number(reponseUser)<=20)&&(Number(reponseUser)>=0)){
+      // stock dans le tableau cette note
+    notes.push(Number(reponseUser));
+    prompt(notes);
+    // Calcul la somme
+    //somme = somme + reponseUser ????????
+    somme +=Number(reponseUser);
+    prompt("somme "+somme);
+    // calcul la moyenne en divisant la somme par le nombre de notes
+    moyenne =somme/notes.length;
+    prompt("moyenne "+moyenne);
+    }else{
+      alert("Merci d'entrer un nombre!");
+    }
+  }
+    </script>
+  </body>
+</html>
